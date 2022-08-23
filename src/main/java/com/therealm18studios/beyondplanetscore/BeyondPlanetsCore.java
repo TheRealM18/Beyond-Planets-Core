@@ -2,7 +2,6 @@ package com.therealm18studios.beyondplanetscore;
 
 import com.therealm18studios.beyondplanetscore.configurations.glacio.GlacioOreGenerationCommon;
 import com.therealm18studios.beyondplanetscore.configurations.mars.MarsOreGenerationCommon;
-import com.therealm18studios.beyondplanetscore.configurations.menelaus.MenelausOreGenerationCommon;
 import com.therealm18studios.beyondplanetscore.configurations.mercury.MercuryOreGenerationCommon;
 import com.therealm18studios.beyondplanetscore.configurations.moon.MoonOreGenerationCommon;
 import com.therealm18studios.beyondplanetscore.configurations.venus.VenusOreGenerationCommon;
@@ -34,14 +33,12 @@ public class BeyondPlanetsCore
          * 3) Moon (Beyond Earth)
          * 4) Mercury (Beyond Earth)
          * 5) Glacio (Beyond Earth)
-         * 6) Menelaus (Futurepack)
          */
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MarsOreGenerationCommon.SPEC, "TheRealM18Studios//beyond_planets_core//Beyond Earth//Mars//ore_configuration-common.toml");
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, VenusOreGenerationCommon.SPEC, "TheRealM18Studios//beyond_planets_core//Beyond Earth//Venus//ore_configuration-common.toml");
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MoonOreGenerationCommon.SPEC, "TheRealM18Studios//beyond_planets_core//Beyond Earth//Moon//ore_configuration-common.toml");
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MercuryOreGenerationCommon.SPEC, "TheRealM18Studios//beyond_planets_core//Beyond Earth//Mercury//ore_configuration-common.toml");
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, GlacioOreGenerationCommon.SPEC, "TheRealM18Studios//beyond_planets_core//Beyond Earth//Glacio//ore_configuration-common.toml");
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MenelausOreGenerationCommon.SPEC, "TheRealM18Studios//beyond_planets_core//Futurepack//Menelaus//ore_configuration-common.toml");
 
         //Registries
         ItemsRegistry.ITEMS.register(bus);
