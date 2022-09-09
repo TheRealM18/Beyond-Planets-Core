@@ -11,6 +11,8 @@ Beta 1.0.12 (1.19)
 * Added Language file for en_us for Coal, Diamond, Emerald, Lapis, Redstone, Gold, Iron, Raw Copper, Raw Iron, Raw Gold, Lead, Cobalt, Tin, Uranium, Zinc
 * Changed the naming convention for the creative tabs
 * Added New Decoration Creative Tab, Raw Lead, Raw Cobalt, Raw Tin, Raw Uranium, Raw Zinc
+* Fixed Minecraft from not loading correctly
+* Now requires datapack for changing ores. Sorry for not figuring out it in configs.  Will work still at making it work later.
 
  
 
