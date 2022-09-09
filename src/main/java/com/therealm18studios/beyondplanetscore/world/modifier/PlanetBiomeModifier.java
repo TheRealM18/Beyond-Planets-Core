@@ -17,8 +17,8 @@ public class PlanetBiomeModifier {
 
     public static final RegistryObject<Codec<ForgeBiomeModifiers.AddFeaturesBiomeModifier>> ADD_FEATURES_BIOME_MODIFIER_TYPE = BIOME_MODIFIER_SERIALIZERS.register("add_features", () ->
             RecordCodecBuilder.create(builder -> builder.group(
-                    Biome.LIST_CODEC.fieldOf("biomes").forGetter(ForgeBiomeModifiers.AddFeaturesBiomeModifier::biomes),
-                    PlacedFeature.LIST_CODEC.fieldOf("features").forGetter(ForgeBiomeModifiers.AddFeaturesBiomeModifier::features),
+                    Biome.LIST_CODEC.fieldOf("biome").forGetter(ForgeBiomeModifiers.AddFeaturesBiomeModifier::biomes),
+                    PlacedFeature.LIST_CODEC.fieldOf("feature").forGetter(ForgeBiomeModifiers.AddFeaturesBiomeModifier::features),
                     GenerationStep.Decoration.CODEC.fieldOf("step").forGetter(ForgeBiomeModifiers.AddFeaturesBiomeModifier::step)
             ).apply(builder, ForgeBiomeModifiers.AddFeaturesBiomeModifier::new))
     );
